@@ -129,7 +129,7 @@ let state='splash',last=performance.now(),vw,vh,lang='ar',viaKey=false;
 $$('img[data-a]').forEach(e=>e.src=A[e.dataset.a]);
 $('#logo').style.setProperty('--logo','url('+A.logo+')');
 const vid=$('#vid'),vf=$('#vf');
-const VIDEO_URL='/_blob/ecb904deb9c05a5a3a0464463e6ed2ef';if(VIDEO_URL)vid.src=VIDEO_URL;
+const VIDEO_URL='hero.mp4';if(VIDEO_URL)vid.src=VIDEO_URL;
 function setPP(){const p=vid.paused;vf.classList.toggle('paused',p);$('#pp').setAttribute('aria-label',T[lang][p?'play':'pause'])}
 $('#pp').onclick=()=>{buzz(10);vid.paused?vid.play().catch(()=>{}):vid.pause();setPP()};
 function setLang(l){lang=l;const r=document.documentElement;r.lang=l;r.dir=l=='ar'?'rtl':'ltr';
